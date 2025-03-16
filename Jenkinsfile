@@ -13,7 +13,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './hello_exec' // Run the compiled program
+                    sh 'exit 1'
+                    //sh './hello_exec' // Run the compiled program
                 }
             }
         }
